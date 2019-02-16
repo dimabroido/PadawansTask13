@@ -31,7 +31,10 @@ class Employee
     public void ChangeEmployeeSurname()
     {
         Employee NewSurname = new Employee();
-
+        if (NewSurname is null)
+        {
+            throw new ArgumentNullException();
+        }
         
     }
 
